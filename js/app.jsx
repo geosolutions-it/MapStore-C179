@@ -7,12 +7,13 @@
  */
 
 const ConfigUtils = require('@mapstore/utils/ConfigUtils');
+require('../assets/css/customizations.css');
 /**
  * Add custom (overriding) translations with:
  *
  * ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
  */
-ConfigUtils.setConfigProp('translationsPath', './MapStore2/web/client/translations');
+ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
 ConfigUtils.setConfigProp('themePrefix', 'MapStore-C179');
 
 /**
@@ -20,7 +21,7 @@ ConfigUtils.setConfigProp('themePrefix', 'MapStore-C179');
  *
  * ConfigUtils.setLocalConfigurationFile('localConfig.json');
  */
-ConfigUtils.setLocalConfigurationFile('MapStore2/web/client/localConfig.json');
+ConfigUtils.setLocalConfigurationFile('localConfig.json');
 
 /**
  * Use a custom application configuration file with:
