@@ -1,6 +1,5 @@
 const path = require("path");
 
-const themeEntries = require('./MapStore2/build/themes.js').themeEntries;
 const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemesPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -17,7 +16,9 @@ module.exports = require('./MapStore2/build/buildConfig')(
         'MapStore-C179-embedded': path.join(__dirname, "MapStore2", "web", "client", "product", "embedded"),
         'MapStore-C179-api': path.join(__dirname, "MapStore2", "web", "client", "product", "api")
     },
-    themeEntries,
+    {
+        "themes/default": path.join(__dirname, "themes", "theme.less")
+    },
     paths,
     extractThemesPlugin,
     true,
