@@ -37,7 +37,7 @@
       "authkeyParamName": "authkey-qa",
       "method": "authkey"
     }, {
-      "urlPattern": "http(s)?\\:\\/\\/web-gis.publiacqua.it/geoserver/.*",
+      "urlPattern": "http(s)?\\:\\/\\/web-gis.publiacqua.it/.*",
       "authkeyParamName": "authkey",
       "method": "authkey"
     }],
@@ -100,6 +100,12 @@
                   "name": "mapnik",
                   "source": "osm",
                   "group": "background"
+              }, {
+                 "type": "bing",
+                 "title": "Bing Aerial",
+                 "name": "Aerial",
+                 "source": "bing",
+                 "group": "background"
               }, {
                   "type": "tileprovider",
                   "title": "NASAGIBS Night 2012",
@@ -244,7 +250,7 @@
                   }
               }
           }, "Login",
-          "OmniBar", "BurgerMenu", "Expander", "GlobeViewSwitcher", {
+          "OmniBar", "BurgerMenu", "Expander", {
             "name": "Cookie",
             "cfg": {
               "externalCookieUrl" : "",
@@ -426,7 +432,7 @@
               "declineUrl" : "http://www.google.com"
               }
           },
-          "OmniBar", "Login", "Save", "SaveAs", "BurgerMenu", "Expander", "Undo", "Redo", "FullScreen", "GlobeViewSwitcher", "SearchServicesConfig", "WidgetsBuilder", "Widgets",
+          "OmniBar", "Login", "Save", "SaveAs", "BurgerMenu", "Expander", "Undo", "Redo", "FullScreen", "SearchServicesConfig", "WidgetsBuilder", "Widgets",
           "WidgetsTray",
           "Timeline",
           "Playback",
