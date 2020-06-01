@@ -323,6 +323,12 @@
                     {"id": "BBOX", "name": "queryform.spatialfilter.methods.box"},
                     {"id": "Circle", "name": "queryform.spatialfilter.methods.circle"},
                     {"id": "Polygon", "name": "queryform.spatialfilter.methods.poly"}
+                ],
+                  "formats": [
+                          {"name": "csv", "label": "csv"},
+                          {"name": "shape-zip", "label": "shape-zip"},
+                          {"name": "excel", "label": "excel"},
+                          {"name": "excel2007", "label": "excel2007"}
                 ]
             }
           }, {
