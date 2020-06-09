@@ -316,7 +316,7 @@
                         <encoding>UTF-8</encoding>
                         <resources>
                             <resource>
-                                <directory>${basedir}/../MapStore2/resources/geoserver/print</directory>
+                                <directory>${basedir}/../resources/geoserver/print</directory>
                                 <includes>
                                     <include>*</include>
                                 </includes>
