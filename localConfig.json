@@ -33,11 +33,7 @@
       "urlPattern": ".*geostore.*",
       "method": "bearer"
     }, {
-      "urlPattern": "http(s)?\\:\\/\\/gs-stable\\.geo-solutions\\.it\\/geoserver/.*",
-      "authkeyParamName": "authkey-qa",
-      "method": "authkey"
-    }, {
-      "urlPattern": "http(s)?\\:\\/\\/web-gis.publiacqua.it/.*",
+      "urlPattern": "http(s)?\\:\\/\\/web-gis.*publiacqua.it/.*",
       "authkeyParamName": "authkey",
       "method": "authkey"
     }],
