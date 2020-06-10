@@ -64,25 +64,19 @@
               "isNew": true,
               "autoload": false
           },
-          "selectedService": "gs_stable_csw",
+          "selectedService": "gs_pa_wms",
           "services": {
-            "gs_stable_csw": {
-              "url": "https://gs-stable.geo-solutions.it/geoserver/csw",
-              "type": "csw",
-              "title": "GeoSolutions GeoServer CSW",
+            "gs_pa_wms": {
+              "url": "https://web-gis.publiacqua.it/geoserver/wms",
+              "type": "wms",
+              "title": "PubliAcqua GeoServer WMS",
               "autoload": true
             },
-            "gs_stable_wms": {
-              "url": "https://gs-stable.geo-solutions.it/geoserver/wms",
-              "type": "wms",
-              "title": "GeoSolutions GeoServer WMS",
-              "autoload": false
-            },
-            "gs_stable_wmts": {
-              "url": "https://gs-stable.geo-solutions.it/geoserver/gwc/service/wmts",
+            "gs_pa_wmts": {
+              "url": "https://web-gis.publiacqua.it/geoserver/wmts",
               "type": "wmts",
-              "title": "GeoSolutions GeoServer WMTS",
-              "autoload": false
+              "title": "PubliAcqua GeoServer WMTS",
+              "autoload": true
             }
           },
           "staticServices": {
@@ -618,9 +612,9 @@
         "name": "DashboardEditor",
         "cfg": {
            "catalog": {
-            "url": "https://gs-stable.geo-solutions.it/geoserver/csw",
+            "url": "https://web-gis.publiacqua.it/geoserver/wms",
             "type": "csw",
-            "title": "GeoSolutions GeoServer CSW",
+            "title": "PubliAcqua GeoServer WMS",
             "autoload": true
           },
           "containerPosition": "columns"
