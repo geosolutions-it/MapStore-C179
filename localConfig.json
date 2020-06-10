@@ -68,8 +68,14 @@
           "services": {
             "gs_pa_wms": {
               "url": "https://web-gis.publiacqua.it/geoserver/wms",
-              "type": "csw",
+              "type": "wms",
               "title": "PubliAcqua GeoServer WMS",
+              "autoload": true
+            },
+            "gs_pa_wmts": {
+              "url": "https://web-gis.publiacqua.it/geoserver/wmts",
+              "type": "wmts",
+              "title": "PubliAcqua GeoServer WMTS",
               "autoload": true
             }
           },
