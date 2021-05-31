@@ -101,7 +101,7 @@
                                         <bean id="userSearch"
                                                 class="org.springframework.security.ldap.search.FilterBasedLdapUserSearch">
                                                 <constructor-arg index="0" value="" />
-                                                <constructor-arg index="1" value="(&amp;(objectCategory=${LDAP_USER_SEARCH_CATEGORY})(|(memberOf=${LDAP_USER_SEARCH_MEMBER_OF_1})(memberOf=${LDAP_USER_SEARCH_MEMBER_OF_2})(memberOf=${LDAP_USER_SEARCH_MEMBER_OF_3}))(sAMAccountName={0}))" />
+                                                <constructor-arg index="1" value="(&amp;(objectCategory=${LDAP_USER_SEARCH_CATEGORY})(|(memberOf=${LDAP_USER_SEARCH_MEMBER_OF_1})(memberOf=${LDAP_USER_SEARCH_MEMBER_OF_2})(memberOf=${LDAP_USER_SEARCH_MEMBER_OF_3})(memberOf=${LDAP_USER_SEARCH_MEMBER_OF_4}))(sAMAccountName={0}))" />
                                                 <constructor-arg index="2" ref="contextSource" />
                                         </bean>
                                 </property>
