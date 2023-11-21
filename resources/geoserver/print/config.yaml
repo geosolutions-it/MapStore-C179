@@ -27,19 +27,22 @@ scales:
   - 4000000
   - 10000000
   - 20000000
-  
+
+formats:
+  - '*'
+
 #===========================================================================
 # the list of allowed hosts
 #===========================================================================
 hosts:
   - !localMatch
     dummy: true
- 
+
   - !ipMatch
     host: 127.0.0.1
     # Allow to all hosts
     mask: 0.0.0.0
-   
+
   - !acceptAll
     dummy: true
 

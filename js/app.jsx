@@ -6,22 +6,32 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const ConfigUtils = require('@mapstore/utils/ConfigUtils');
-require('../assets/css/customizations.css');
+import { checkForMissingPlugins } from '@mapstore/utils/DebugUtils';
+import main from '@mapstore/product/main';
+import {
+    setConfigProp,
+    setLocalConfigurationFile
+} from '@mapstore/utils/ConfigUtils';
+
+import appConfig from '@mapstore/product/appConfig';
+import plugins from '@mapstore/product/plugins';
+
+import('../assets/css/customizations.css');
+
 /**
  * Add custom (overriding) translations with:
  *
- * ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
+ * setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
  */
-ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
-ConfigUtils.setConfigProp('themePrefix', 'MapStore-C179');
+setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
+setConfigProp('themePrefix', 'MapStore-C179');
 
 /**
  * Use a custom plugins configuration file with:
  *
- * ConfigUtils.setLocalConfigurationFile('localConfig.json');
+ * setLocalConfigurationFile('localConfig.json');
  */
-ConfigUtils.setLocalConfigurationFile('localConfig.json');
+setLocalConfigurationFile('configs/localConfig.json');
 
 /**
  * Use a custom application configuration file with:
@@ -38,13 +48,6 @@ ConfigUtils.setLocalConfigurationFile('localConfig.json');
  *     }]
  * });
  */
-const appConfig = require('@mapstore/product/appConfig');
 
-/**
- * Define a custom list of plugins with:
- *
- * const plugins = require('./plugins');
- */
-const plugins = require('@mapstore/product/plugins');
-
-require('@mapstore/product/main')(appConfig, plugins);
+checkForMissingPlugins(plugins.plugins);
+main(appConfig, plugins);

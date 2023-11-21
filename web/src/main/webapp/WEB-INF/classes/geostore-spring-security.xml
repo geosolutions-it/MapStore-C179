@@ -129,6 +129,8 @@
 
                         </bean>
                 </constructor-arg>
+
+
                 <constructor-arg>
                         <bean
                                 class="it.geosolutions.geostore.services.rest.security.GeoStoreLdapAuthoritiesPopulator">
