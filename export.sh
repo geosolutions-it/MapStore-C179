@@ -1,3 +1,5 @@
+# use this demo variables to be able to start project locally
+
 export LDAP_URL="ldap://this.will.not.work:389/dc=xxxxx,dc=xxxxx,dc=xxxxx"
 export LDAP_USER_SEARCH_CATEGORY="LDAP_USER_SEARCH_CATEGORY"
 export LDAP_GROUPS="LDAP_GROUPS"

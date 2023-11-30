@@ -125,7 +125,7 @@
     "fe:start-prod": "webpack serve --progress --color --port 8081 --hot --inline --config prod.webpack.config.js --content-base .",
     "fe:build": "npm run clean && mkdirp ./dist && webpack build --progress --color --config prod-webpack.config.js",
     "compile": "npm run fe:build",
-    "be:build": "mvn clean install",
+    "be:build": "mvn clean install -Pprinting",
     "be:start": "npm run be:build && mvn cargo:run -f ./web/pom.xml",
     "pretest": "npm run lint",
     "test": "karma start ./karma.conf.single-run.js --color",
