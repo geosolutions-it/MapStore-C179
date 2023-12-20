@@ -18,4 +18,13 @@
     <Category>
         <name>CONTEXT</name>
     </Category>
+    <Category>
+        <name>TEMPLATE</name>
+    </Category>
+    <Category>
+        <name>USERSESSION</name>
+    </Category>
+    <Category>
+        <name>PERMALINK</name>
+    </Category>
 </CategoryList>
