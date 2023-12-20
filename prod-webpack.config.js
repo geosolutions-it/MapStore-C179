@@ -2,6 +2,7 @@ const path = require("path");
 
 const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemesPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ModuleFederationPlugin = require('./MapStore2/build/moduleFederation.js').plugin;
 
 const paths = {
     base: __dirname,
@@ -22,7 +23,7 @@ module.exports = require('./MapStore2/build/buildConfig')(
         "themes/default": path.join(__dirname, "themes", "theme.less")
     },
     paths,
-    extractThemesPlugin,
+    [extractThemesPlugin, ModuleFederationPlugin],
     true,
     undefined,
     '.MapStore-C179',
