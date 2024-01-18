@@ -11,7 +11,7 @@ const paths = {
     code: [path.join(__dirname, "js"), path.join(__dirname, "MapStore2", "web", "client")]
 };
 
-module.exports = require('./MapStore2/build/buildConfig')(
+const cfg = require('./MapStore2/build/buildConfig')(
     {
         'MapStore-C179': path.join(__dirname, "js", "app"),
         'MapStore-C179-embedded': path.join(__dirname, "js", "embedded"),
@@ -74,3 +74,21 @@ module.exports = require('./MapStore2/build/buildConfig')(
         "@js": path.resolve(__dirname, "js")
     }
 );
+
+
+cfg.resolve.fallback = {
+    "fs": false,
+    "tls": false,
+    "net": false,
+    "path": false,
+    "buffer": require.resolve("buffer/"),
+    "util": require.resolve("util/"),
+    "zlib": false,
+    "http": false,
+    "https": false,
+    "stream": false,
+    "crypto": false/* ,
+    "crypto-browserify": require.resolve('crypto-browserify'), //if you want to use this module also don't forget npm i crypto-browserify */
+};
+
+module.exports = cfg;
