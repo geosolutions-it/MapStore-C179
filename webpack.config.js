@@ -37,6 +37,8 @@ cfg.resolve.fallback = {
     "tls": false,
     "net": false,
     "path": false,
+    "buffer": false,
+    "util": false,
     "zlib": false,
     "http": false,
     "https": false,
