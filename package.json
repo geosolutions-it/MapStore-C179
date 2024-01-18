@@ -116,6 +116,7 @@
     "webpack-dev-server": "3.11.0"
   },
   "dependencies": {
+    "crypto-browserify": "^3.12.0",
     "mapstore2": "file:MapStore2"
   },
   "scripts": {
