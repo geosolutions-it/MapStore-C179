@@ -3,7 +3,7 @@ const path = require("path");
 const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemesPlugin;
 const ModuleFederationPlugin = require('./MapStore2/build/moduleFederation').plugin;
 
-const cfg = require('./MapStore2/build/buildConfig')(
+module.exports = require('./MapStore2/build/buildConfig')(
     {
         'MapStore-C179': path.join(__dirname, "js", "app"),
         'MapStore-C179-embedded': path.join(__dirname, "js", "embedded"),
@@ -31,20 +31,3 @@ const cfg = require('./MapStore2/build/buildConfig')(
         "@js": path.resolve(__dirname, "js")
     }
 );
-
-cfg.resolve.fallback = {
-    "fs": false,
-    "tls": false,
-    "net": false,
-    "path": false,
-    "buffer": false,
-    "util": false,
-    "zlib": false,
-    "http": false,
-    "https": false,
-    "stream": false,
-    "crypto": false/* ,
-    "crypto-browserify": require.resolve('crypto-browserify'), //if you want to use this module also don't forget npm i crypto-browserify */
-};
-
-module.exports = cfg;
