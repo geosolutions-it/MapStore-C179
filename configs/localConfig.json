@@ -44,18 +44,12 @@
     }
   ],
   "monitorState": [
-    {
-      "name": "router",
-      "path": "router.location.pathname"
-    },
-    {
-      "name": "browser",
-      "path": "browser"
-    },
-    {
-      "name": "featuregridmode",
-      "path": "featuregrid.mode"
-    }
+      {"name": "router", "path": "router.location.pathname"},
+      {"name": "browser", "path": "browser"},
+      {"name": "geostorymode", "path": "geostory.mode"},
+      {"name": "featuregridmode", "path": "featuregrid.mode"},
+      {"name": "userrole", "path": "security.user.role"},
+      {"name": "printEnabled", "path": "print.capabilities"}
   ],
   "projectionDefs": [],
   "initialState": {
@@ -375,7 +369,7 @@
       },
       "Home",
       "FeatureEditor",
-      "WFSDownload",
+      "LayerDownload",
       {
         "name": "QueryPanel",
         "cfg": {
