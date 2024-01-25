@@ -422,6 +422,7 @@
           "removeGroupsPermissions": true
         }
       },
+      "FilterLayer",
       "AddGroup",
       "TOCItemsSettings",
       "Tutorial",
