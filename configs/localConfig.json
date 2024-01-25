@@ -339,6 +339,7 @@
       },
       "Notifications",
       "BackgroundSelector",
+      "Swipe",
       {
         "name": "Annotations",
         "cfg": {
