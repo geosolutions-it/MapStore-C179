@@ -38,7 +38,7 @@
       "method": "bearer"
     },
     {
-      "urlPattern": "http(s)?\\:\\/\\/web-gis.*publiacqua.it/.*",
+      "urlPattern": "http(s)?\\:\\/\\/web-gis.*publiacqua.it(\\:443|\\:80)?/.*",
       "authkeyParamName": "authkey",
       "method": "authkey"
     }
@@ -343,7 +343,8 @@
       {
         "name": "Annotations",
         "cfg": {
-          "geodesic": true
+          "geodesic": true,
+          "symbolsPath": "assets/images/symbols/"
         }
       },
       {
