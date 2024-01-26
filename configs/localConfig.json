@@ -423,7 +423,7 @@
           "removeGroupsPermissions": true
         }
       },
-      "FilterLayer",
+
       "AddGroup",
       "TOCItemsSettings",
       "Tutorial",
@@ -439,6 +439,7 @@
       "Print",
       "MapImport",
       "MapExport",
+      "FilterLayer",
       {
         "name": "Settings",
         "cfg": {
@@ -538,6 +539,8 @@
       "Save",
       "SaveAs",
       "Expander",
+      "GlobeViewSwitcher",
+      "SearchByBookmark",
       "Undo",
       "Redo",
       "FullScreen",
@@ -823,7 +826,7 @@
           "services": {
             "PubliAcqua GeoServer WMS": {
               "url": "https://web-gis.publiacqua.it/geoserver/wms",
-              "type": "csw",
+              "type": "wms",
               "title": "PubliAcqua GeoServer WMS",
               "autoload": true
             }
@@ -908,6 +911,30 @@
         }
       }
     ],
+    "geostory-embedded": [
+      "GeoStory",
+      {
+        "name": "GeoStoryNavigation",
+        "cfg": {
+          "containerPosition": "header"
+        }
+      },
+      {
+        "name": "FeedbackMask",
+        "cfg": {
+          "containerPosition": "header"
+        }
+      }
+    ],
+      "dashboard-embedded": [
+        {
+          "name": "Dashboard",
+          "cfg": {
+            "minLayoutWidth": 768
+          }
+        },
+        { "name": "FeedbackMask" }
+      ],
     "geostory": [
       {
         "name": "OmniBar",
