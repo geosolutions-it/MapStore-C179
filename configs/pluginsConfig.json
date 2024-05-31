@@ -292,7 +292,9 @@
       "title": "plugins.Print.title",
       "description": "plugins.Print.description",
       "defaultConfig": {
-        "geodetic": true
+        "overrideOptions": {
+          "geodetic": true
+        }
       },
       "dependencies": [
         "SidebarMenu"
