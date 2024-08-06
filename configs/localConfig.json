@@ -8,7 +8,19 @@
       "https://nominatim.openstreetmap.org",
       "http://cloudsdi.geo-solutions.it",
       "https://gs-stable.geo-solutions.it/geoserver",
-      "https://gs-stable.geo-solutions.it:443/geoserver"
+      "https://gs-stable.geo-solutions.it:443/geoserver",
+      "http://gs-stable.geo-solutions.it/geoserver",
+      "http://gs-stable.geo-solutions.it:443/geoserver",
+      "https://gs-stable.geosolutionsgroup.com/geoserver",
+      "https://gs-stable.geosolutionsgroup.com:443/geoserver",
+      "http://gs-stable.geosolutionsgroup.com/geoserver",
+      "http://gs-stable.geosolutionsgroup.com:443/geoserver",
+      "https://tile.googleapis.com",
+      "https://maps1.geosolutionsgroup.com/geoserver/",
+      "https://maps2.geosolutionsgroup.com/geoserver/",
+      "https://maps3.geosolutionsgroup.com/geoserver/",
+      "https://maps4.geosolutionsgroup.com/geoserver/",
+      "https://maps5.geosolutionsgroup.com/geoserver/"
     ]
   },
   "geoStoreUrl": "rest/geostore/",
@@ -126,7 +138,15 @@
                   "opacity": 1,
                   "title": "Sentinel 2 Cloudless",
                   "type": "wms",
-                  "url": "https://1maps.geo-solutions.it/geoserver/wms",
+                  "url": [
+                    "https://maps1.geosolutionsgroup.com/geoserver/wms",
+                    "https://maps2.geosolutionsgroup.com/geoserver/wms",
+                    "https://maps3.geosolutionsgroup.com/geoserver/wms",
+                    "https://maps4.geosolutionsgroup.com/geoserver/wms",
+                    "https://maps5.geosolutionsgroup.com/geoserver/wms",
+                    "https://maps6.geosolutionsgroup.com/geoserver/wms"
+                  ],
+                  "tileSize": 512,
                   "source": "s2cloudless",
                   "singleTile": false,
                   "visibility": false
@@ -217,11 +237,9 @@
       {
         "name": "TOC",
         "cfg": {
-          "activateMetedataTool": false,
           "activateMapTitle": false,
           "activateSortLayer": false,
-          "activateLayerFilterTool": false,
-          "activateQueryTool": false
+          "activateLayerFilterTool": false
         }
       },
       "AddGroup",
@@ -413,10 +431,8 @@
       {
         "name": "TOC",
         "cfg": {
-          "activateQueryTool": true,
           "activateAddLayerButton": true,
           "activateAddGroupButton": true,
-          "activateMetedataTool": false,
           "addLayersPermissions": true,
           "removeLayersPermissions": true,
           "sortingPermissions": true,
@@ -651,8 +667,6 @@
         "name": "TOC",
         "cfg": {
           "activateMapTitle": false,
-          "activateSettingsTool": false,
-          "activateMetedataTool": false,
           "activateRemoveLayer": false
         }
       },
@@ -794,9 +808,6 @@
         }
       },
       {
-        "name": "Login"
-      },
-      {
         "name": "Language"
       },
       {
@@ -810,9 +821,6 @@
       },
       {
         "name": "Attribution"
-      },
-      {
-        "name": "Home"
       },
       {
         "name": "DeleteDashboard"
@@ -881,9 +889,6 @@
         }
       },
       {
-        "name": "BurgerMenu"
-      },
-      {
         "name": "Dashboard"
       },
       {
@@ -915,6 +920,31 @@
         "name": "FeedbackMask",
         "cfg": {
           "containerPosition": "header"
+        }
+      },
+      "Details",
+      "AddWidgetDashboard",
+      "MapConnectionDashboard",
+      {
+        "name": "SidebarMenu",
+        "cfg": {
+          "containerPosition": "columns"
+        }
+      },
+      {
+        "name": "Home",
+        "override": {
+          "OmniBar": {
+            "priority": 5
+          }
+        }
+      },
+      {
+        "name": "Login",
+        "override": {
+          "OmniBar": {
+            "priority": 5
+          }
         }
       }
     ],

@@ -59,7 +59,8 @@
         "FeatureEditor",
         "FilterLayer",
         "AddGroup",
-        "Swipe"
+        "Swipe",
+        "MetadataInfo"
       ],
       "autoEnableChildren": [
         "TOCItemsSettings",
@@ -402,6 +403,9 @@
       "name": "Swipe"
     },
     {
+      "name": "MetadataInfo"
+    },
+    {
       "name": "SearchByBookmark"
     },
     {
@@ -495,9 +499,14 @@
       "denyUserSelection": true,
       "title": "plugins.Save.title",
       "description": "plugins.Save.description",
-      "dependencies": [
-        "SidebarMenu",
+      "children": [
         "SaveAs"
+      ],
+      "autoEnableChildren": [
+        "SaveAs"
+      ],
+      "dependencies": [
+        "SidebarMenu"
       ]
     },
     {
