@@ -8,7 +8,19 @@
       "https://nominatim.openstreetmap.org",
       "http://cloudsdi.geo-solutions.it",
       "https://gs-stable.geo-solutions.it/geoserver",
-      "https://gs-stable.geo-solutions.it:443/geoserver"
+      "https://gs-stable.geo-solutions.it:443/geoserver",
+      "http://gs-stable.geo-solutions.it/geoserver",
+      "http://gs-stable.geo-solutions.it:443/geoserver",
+      "https://gs-stable.geosolutionsgroup.com/geoserver",
+      "https://gs-stable.geosolutionsgroup.com:443/geoserver",
+      "http://gs-stable.geosolutionsgroup.com/geoserver",
+      "http://gs-stable.geosolutionsgroup.com:443/geoserver",
+      "https://tile.googleapis.com",
+      "https://maps1.geosolutionsgroup.com/geoserver/",
+      "https://maps2.geosolutionsgroup.com/geoserver/",
+      "https://maps3.geosolutionsgroup.com/geoserver/",
+      "https://maps4.geosolutionsgroup.com/geoserver/",
+      "https://maps5.geosolutionsgroup.com/geoserver/"
     ]
   },
   "geoStoreUrl": "rest/geostore/",
