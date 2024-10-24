@@ -84,7 +84,7 @@
               "autoload": true
             },
             "gs_pa_wmts": {
-              "url": "https://web-gis.publiacqua.it/geoserver/wmts",
+              "url": "https://web-gis.publiacqua.it/geoserver/gwc/service/wmts",
               "type": "wmts",
               "title": "PubliAcqua GeoServer WMTS",
               "autoload": true
