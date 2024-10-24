@@ -458,7 +458,11 @@
         "cfg": {
           "overrideOptions": {
             "geodetic": true
-          }
+          },
+          "mapPreviewOptions": {
+            "enableScalebox": true
+          },
+          "useFixedScales": true
         }
       },
       "MapImport",
