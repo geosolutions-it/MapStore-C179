@@ -10,36 +10,32 @@ dpis:
 # the allowed scales
 #===========================================================================
 scales:
+  - 100
+  - 200
   - 500
   - 1000
   - 2000
   - 5000
   - 10000
-  - 20000
   - 50000
   - 100000
-  - 200000
-  - 500000
-  - 100000
-  - 500000
-  - 1000000
-  - 2000000
-  - 4000000
-  - 10000000
-  - 20000000
-  
+  - 250000
+
+formats:
+  - '*'
+
 #===========================================================================
 # the list of allowed hosts
 #===========================================================================
 hosts:
   - !localMatch
     dummy: true
- 
+
   - !ipMatch
-    host: 127.0.0.1
+    ip: 127.0.0.1
     # Allow to all hosts
     mask: 0.0.0.0
-   
+
   - !acceptAll
     dummy: true
 
@@ -139,7 +135,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 123
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -243,7 +238,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 205
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -321,7 +315,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 178
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -399,7 +392,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 260
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -477,7 +469,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 178
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -490,7 +481,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 595 842
       landscape: false
       items:
@@ -593,7 +583,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 260
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -606,7 +595,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 842 595
       landscape: false
       items:
@@ -735,7 +723,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 191
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -839,7 +826,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 307
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -917,7 +903,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 260
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -995,7 +980,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 376
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1073,7 +1057,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 260
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1086,7 +1069,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 842 1190
       landscape: false
       items:
@@ -1189,7 +1171,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 376
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1202,7 +1183,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 1190 842
       landscape: false
       items:
@@ -1331,7 +1311,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 290
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1435,7 +1414,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 455
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1513,7 +1491,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 376
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1591,7 +1568,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 541
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1669,7 +1645,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 376
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1682,7 +1657,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 1190 1684
       landscape: false
       items:
@@ -1785,7 +1759,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 541
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -1798,7 +1771,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 1684 1190
       landscape: false
       items:
@@ -1927,7 +1899,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 438
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -2031,7 +2002,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 670
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -2109,7 +2079,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 541
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -2187,7 +2156,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 773
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -2265,7 +2233,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 541
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -2278,7 +2245,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 1684 2380
       landscape: false
       items:
@@ -2381,7 +2347,6 @@ layouts:
               nbColumns: 1
               items:
                 - !text
-                  width: 773
                   text: '${now dd.MM.yyyy}'
                   fontEncoding: Cp1252
                   fontSize: 9
@@ -2394,7 +2359,6 @@ layouts:
               type: 'bar sub'
               intervals: 5
     lastPage:
-      rotation: true
       pageSize: 2380 1684
       landscape: false
       items:
