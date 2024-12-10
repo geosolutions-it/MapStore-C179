@@ -1,1 +1,1 @@
-MapStore-C179-1.1.0-rc
+MapStore-C179-1.1.0
